@@ -33,6 +33,7 @@ spec:
   }
 
   stages {
+
     stage('Test python') {
       steps {
         container('python') {
@@ -41,9 +42,8 @@ spec:
         }
       }
     }
-  }
 
-stage('Build image') {
+    stage('Build image') {
       steps {
         container('docker') {
           sh "docker build -t localhost:4000/pythontest:latest ."
@@ -51,4 +51,6 @@ stage('Build image') {
         }
       }
     }
+  }
+
 }
