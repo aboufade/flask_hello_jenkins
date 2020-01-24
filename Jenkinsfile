@@ -43,7 +43,6 @@ spec:
     }
   }
 
-}
 stage('Build image') {
       steps {
         container('docker') {
@@ -52,3 +51,4 @@ stage('Build image') {
         }
       }
     }
+}
