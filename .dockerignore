@@ -1,0 +1,5 @@
+__pycache__
+configuration.yaml
+venv
+Dockerfile
+*pyc
